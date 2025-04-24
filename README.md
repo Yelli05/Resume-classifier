@@ -1,39 +1,63 @@
-# Resume Screening and Classification System
+## Resume Classification Web Application
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Table of Contents
-- [Project Overview](#project-overview)
-- [Key Features](#key-features)
-- [Dataset](#dataset)
+- [Project Description](#project-description)
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [How to Run](#how-to-run)
+- [Usage](#usage)
 - [Technical Approach](#technical-approach)
 - [Model Performance](#model-performance)
+- [Dataset](#dataset)
+- [Credits](#credits)
+- [Contact](#contact)
+- [License](#license)
 
 
-## Project Overview
+## Project Description
 
-This machine learning system automatically classifies resumes into 25 distinct job categories based on their content. The solution helps HR departments and recruitment agencies streamline their resume screening process.
+This project is a web application designed to classify resumes into different job categories using a machine learning model. It helps streamline the resume screening process for recruiters and HR departments by automatically categorizing resumes based on their content.
 
-## Key Features
+The application is built using:
 
-- **Text Preprocessing Pipeline**
-  - Special character removal
-  - Lowercase conversion
-  - Stopword removal
-  - Tokenization
+*   **Python**: For the backend logic and machine learning model.
+*   **Flask**: As the web framework to create the web application.
+*   **HTML/CSS**: For the frontend user interface.
+*   **Machine Learning Model**: A pre-trained model (Logistic Regression) serialized in a pickle file.
 
-- **Machine Learning Models**
-  - Random Forest Classifier
-  - Logistic Regression
-  - Multinomial Naive Bayes
+## Features
 
-- **Web Interface**
-  - Flask-based web application
-  - Simple resume submission form
-  - Instant classification results
+*   **Resume Upload**: Users can upload resumes through a simple web interface.
+*   **Automatic Classification**: Resumes are automatically classified into one of 25 job categories.
+*   **Instant Results**: Classification results are displayed immediately after the resume is uploaded.
+* **Text Preprocessing**:The app is including:
+    *   Special character removal
+    *   Lowercase conversion
+    *   Stopword removal
+    *   Tokenization
+
+## Dependencies
+
+*   Python 3.6+
+*   Flask
+*   scikit-learn
+*   pandas
+*   nltk
+*   re
+*   pickle
 
 ## Dataset
 
-The dataset contains **962 labeled resumes** across 25 categories:
+The dataset used for training the model contains **962 labeled resumes** across 25 distinct job categories.
+
+## Installation
+
+1.  **Clone the repository:**
+    
 
 | Category                | Count |
 |-------------------------|-------|
